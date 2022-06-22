@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Fira+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 0;
+    height: 2px;
+    transform: translate(5vw, 4.6vw);
+    transition: width 1s ease-in-out;
+}
+
+.gameContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 70px;
+    margin-left: 20px; */  
+    align-items: center;
+    /* background-color: aliceblue; */
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 11vw);
+    grid-template-columns: repeat(3, 13vw);
+    font-family: 'Fira Sans', sans-serif;
+    position: relative;
+}
+
+.box { 
+    border: 1px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;  
+}
+
+.box:hover {
+    background-color: rgb(247, 215, 215);
+    cursor: pointer;
+}
+
+.gameInfo {
+    /* padding-top: 70px; */
+    padding-left: 6vw;
+    margin-top: 20vh;
+    position: relative;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.gameInfo .right{
+    line-height: 45px;
+}
+
+.imgBox img {
+    width: 0;
+    transition: width 1s linear;
+    /* margin-top: 20px; */
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+#reset {
+    padding: 4px 7px;
+    background-color: rgb(216, 118, 131);
+    border: 1px solid rgb(226, 23, 23);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.symbol {
+    padding: 4px 7px;
+    margin-right: 12px;
+    background-color: black;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.p, .s{
+    padding: 4px 7px;
+    margin-right: 12px;
+    background-color: black;
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) { 
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+}
