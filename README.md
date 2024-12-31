@@ -1,3 +1,3 @@
 # Game
-Tictactoe game using JavaScript
-Refere Master Branch.
+Tictactoe game using JavaScript.
+Refer Master Branch.
